@@ -76,20 +76,23 @@ textarea:not([rows]) {
 }
 
 header{
+
     background-color: black;
     color: white;
     display: flex;
     flex-wrap: wrap;
-    gap: 2em;
+    gap: 4em;
     align-items: center;
-    padding: 0 2em;
-    height: 50svh;
+    padding: 4em 2em;
+    min-height: 50svh;
 
     h1{
-
+    width: min(90%, 1000px);
+    margin-inline: auto;
+    
         width: fit-content;
         color: rgb(27, 99, 253);
-        padding: .5em;
+ 
         font-size: clamp(2rem, 4vw, 4rem);
     
 
@@ -97,6 +100,8 @@ header{
     }
 
     p{
+          width: min(90%, 1000px);
+    margin-inline: auto;
         line-height: 1.1;
        
         font-size: clamp(1.8rem, 4vw, 2rem);
@@ -110,7 +115,7 @@ main{
 }
 
 .escrito-container{
-
+  
  
     border-radius: .3em;
 
@@ -120,29 +125,31 @@ main{
 
     background-color: black;
 
-
+  .text-container{
+      padding: 2em 1em;
+    }
 
 
     h4{
-        font-size: clamp(1.5em, 4vw, 2rem);
+        font-size: clamp(1.8em, 4vw, 2rem);
         width: 90%;
-             padding-left: .5em;
+          
              color: white;
     }
     p{
-        font-size: clamp(1.5rem, 4vw, 1.8rem);
+        font-size: clamp(1.3rem, 4vw, 1.5rem);
 
-        margin: 0;
+    
         line-height: 1.1;
         color: white;
-     padding-left: .5em;
+   
     }
 
   
     
     img{
         height: 60svh;
-        margin-bottom: 2em;
+
         width: 100%;
         object-fit: cover;
         
@@ -153,7 +160,7 @@ main{
         color: black;
         text-align: center;
             font-size: clamp(1.4rem, 4vw, 1.8rem);
-            margin-top: 2em;
+      
     }
 
     details article p{
@@ -174,12 +181,36 @@ main{
       font-size: clamp(1.3rem, 4vw, 1.7rem);
       margin-bottom: 1em;
       color: orangered;
+       }
 
+       h6{
+        font-size: clamp(1.5rem, 4vw, 2rem);
+        padding: 0 1em;
+        text-align: center;
+
+        border-bottom: 2px solid white;
+        margin: 4em 0;
+       }
+      ul{
+        width: 90%;
+        display: grid;
+    
+        margin-inline: auto;
+     
+        list-style-type: none;
+        li{
+          margin-bottom: 1.5em;
+          font-size: clamp(1.3rem, 4vw, 1.6rem);
+          border-bottom: 2px solid white;
+              color: rgb(255, 255, 255);
+              line-height: 1.1;
+        }
+      }
     }
     
     
   }
- }
+ 
 
  .pintura{
   margin-top: 1em;
