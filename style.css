@@ -77,7 +77,7 @@ textarea:not([rows]) {
 }
 
 body{
-  background-color: rgb(17, 55, 73);
+  background-color: rgb(0, 0, 0);
 }
 
 header{
@@ -85,7 +85,7 @@ header{
     margin-inline: auto;
 
     color: black;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
 
     padding: 4em 0;
     color: white;
@@ -94,7 +94,7 @@ header{
   
     
         width: fit-content;
-        color: rgb(255, 255, 255);
+        color: rgb(255, 94, 0);
  
         font-size: clamp(3rem, 5vw, 6em);
     
@@ -114,6 +114,7 @@ main{
     width: min( 95%, 800px);
     margin-inline: auto;
     height: 50em;
+ 
 }
 
 .escrito-container{
@@ -123,8 +124,8 @@ main{
 
    
     margin-top: 2em;
-    border: 2px solid black;
 
+  
     background-color: black;
 
   .text-container{
@@ -174,9 +175,11 @@ main{
 
       object-fit: contain;
       margin-inline: auto;
+
     }
 
     details article {
+          padding-bottom: 10em;
       blockquote{ 
       width: 80%; 
       margin-inline: auto;
