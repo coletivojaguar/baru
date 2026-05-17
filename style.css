@@ -1,0 +1,189 @@
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+header{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    align-items: center;
+    padding: 0 2em;
+    height: 50svh;
+
+    h1{
+
+        width: fit-content;
+        color: rgb(27, 99, 253);
+        padding: .5em;
+        font-size: clamp(2rem, 4vw, 4rem);
+    
+
+        
+    }
+
+    p{
+        line-height: 1.1;
+       
+        font-size: clamp(1.8rem, 4vw, 2rem);
+    }
+}
+
+main{
+    width: min( 95%, 800px);
+    margin-inline: auto;
+    height: 50em;
+}
+
+.escrito-container{
+
+ 
+    border-radius: .3em;
+
+   
+    margin-top: 2em;
+    border: 2px solid black;
+
+    background-color: black;
+
+
+
+
+    h4{
+        font-size: clamp(1.5em, 4vw, 2rem);
+        width: 90%;
+             padding-left: .5em;
+             color: white;
+    }
+    p{
+        font-size: clamp(1.5rem, 4vw, 1.8rem);
+
+        margin: 0;
+        line-height: 1.1;
+        color: white;
+     padding-left: .5em;
+    }
+
+  
+    
+    img{
+        height: 60svh;
+        margin-bottom: 2em;
+        width: 100%;
+        object-fit: cover;
+        
+    }
+
+    summary{
+        background-color: white;
+        color: black;
+        text-align: center;
+            font-size: clamp(1.4rem, 4vw, 1.8rem);
+            margin-top: 2em;
+    }
+
+    details article p{
+      padding: 3em 1em;
+      text-wrap: balance;
+    }
+
+    details article img{
+
+      object-fit: contain;
+      margin-inline: auto;
+    }
+
+    details article {
+      blockquote{ 
+      width: 80%; 
+      margin-inline: auto;
+      font-size: clamp(1.3rem, 4vw, 1.7rem);
+      margin-bottom: 1em;
+      color: orangered;
+
+    }
+    
+    
+  }
+ }
+
+ .pintura{
+  margin-top: 1em;
+  font-size: clamp(1.3rem, 4vw, 1.7rem);
+  line-height: 1.1;
+  color: orangered;
+ }
